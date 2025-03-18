@@ -1,0 +1,41 @@
+{
+  "name": "my-storyblok-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check app/",
+    "format": "biome format --write app/",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "test:related": "vitest related",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.51.1",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.24",
+    "@types/react": "^19.0.11",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "jsdom": "^26.0.0",
+    "lefthook": "^1.11.3",
+    "tailwindcss": "^4",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

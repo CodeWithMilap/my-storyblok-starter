@@ -1,0 +1,17 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: npm run lint
+      glob: "*.{ts,tsx,js,jsx}"
+    typecheck:
+      run: npm run typecheck
+      glob: "*.{ts,tsx}"
+    test:
+      run: npm run test:related
+      glob: "*.{test,spec}.{ts,tsx}"
+
+pre-push:
+  commands:
+    e2e:
+      run: npm run test:e2e
